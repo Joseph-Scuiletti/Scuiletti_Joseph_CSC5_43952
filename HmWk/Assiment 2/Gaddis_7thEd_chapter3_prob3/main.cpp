@@ -6,6 +6,7 @@
  */
 
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 //Global Constant
@@ -33,7 +34,7 @@ cin>>test5;
 //caulating
 avrg=(test1+test2+test3+test4+test5)/5;
 //output
-cout<<"the average is "<<showpoint<<fixed<<setprecision(1)<<avrg<<endl;
+cout<<"the average is "<<showpoint<<setprecision(1)<<fixed<<avrg<<endl;
     return 0;
 }
 

@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=Default netbean Program
+PROJECTNAME=Gaddis_7thEd_chapter3_prob3
 
 # Active Configuration
 DEFAULTCONF=Debug
