@@ -1,4 +1,4 @@
-/* 
+/*
  * File:   main.cpp
  * Author: Joseph Scuiletti
  *
@@ -15,14 +15,14 @@ using namespace std;
 //Function Prototypes
 
 //Execution
-int main(int argc, char** argv) {
+int main() {
 //Declare Variables
     unsigned short seatA,seatB,seatC,priceA,priceB,priceC,incomeA,incomeB,incomeC,total;
     //input
     priceA=15;
     priceB=12;
     priceC=9;
-    cout<<"How many softball stadium seats were sold for class A"<<endl;
+    cout<<"How many softball stadium seats were sold for class A(only in intgers)"<<endl;
     cin>>seatA;
     cout<<"How many seats were sold for class B"<<endl;
     cin>>seatB;
@@ -34,13 +34,11 @@ int main(int argc, char** argv) {
     incomeC=seatC*priceC;
     total=incomeA+incomeB+incomeC;
     //output
-    
     cout<<"The income for class A is $"<<incomeA<<endl;
     cout<<"The income for class B is $"<<incomeB<<endl;
     cout<<"The income for class C is $"<<incomeC<<endl;
-    
     cout<<"The income for all classes is $"<<total;
-            
+
     return 0;
 }
 
