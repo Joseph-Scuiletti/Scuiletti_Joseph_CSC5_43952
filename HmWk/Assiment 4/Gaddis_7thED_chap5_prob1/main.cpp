@@ -18,18 +18,20 @@ using namespace std;
 
 int main(){
 //declare varibles
-unscript int  sum, adnum, total;
+ int num1, adnum,sum, total;
 cout<<" this will determine the sum of a through a slected number"<<endl;
-cout<<" please iput the number you want to use"<<endl;
-cin>>sum
+cout<<" please input the number you want to use"<<endl;
+cin>>num1;
 //loop
-for(adnum=1;adnum>=sum;adnumb;){
-	total=adnum+sum;
-	cout<<adnum<<endl;
-	cout<<sum<<endl;
-	cout<<total<<endl;
-	}
+        for(adnum=0;adnum<=num1;adnum++){
+            sum=adnum+num1;
+            cout<<"the"<<adnum<<endl;
+            cout<<"answer"<<sum<<endl;
+            
+              }
 
+                
+                
     return 0;
 }
 
