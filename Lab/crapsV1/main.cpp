@@ -1,4 +1,4 @@
-/* 
+/*
  * File:   main.cpp
  * Author: Joseph Scuiletti
  * Created on May 4, 2015, 7:51 AM
@@ -70,7 +70,7 @@ int main(int argc, char** argv) {
 unsigned char roll(unsigned char nDie,unsigned char sides){
     unsigned char sum=0;
     for(int die=1;die<=nDie;die++){
-        sum+=(rand()%sides+1);
+        sum+=(rand()%sides+2);
     }
     return sum;
 }
