@@ -1,4 +1,4 @@
-/* 
+/*
  * File:   main.cpp
  * Author: Joseph Scuiletti
  * Created on May 4, 2015, 8:03 AM
@@ -20,7 +20,7 @@ using namespace std;
 unsigned char roll(unsigned char,unsigned char);
 
 //Execution begins here!
-int main(int argc, char** argv) {
+int main() {
     //Initialize the random number seed
     srand(static_cast<unsigned int>(time(0)));
     //Declare variables
