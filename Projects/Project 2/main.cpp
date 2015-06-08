@@ -8,6 +8,7 @@
 //System Libraries
 #include <iostream>
 #include <string>
+#include <fstream>
 using namespace std;
 
 //User Libraries
@@ -29,12 +30,36 @@ string choice;
 int playHp=12;
 int attack=6;
 int quit=0;
-
+ofstream out;
 //Start the game
-//load the game
 //open file
+//open the file
+    out.open("help.dat");
+//fill file
+	out<<"//System Libraries"<<endl;
+	out<<"//Global Constants"<<endl;
+	out<<"//Function Prototypes"<<endl;
+	out<<"//Function Prototypes"<<endl;
+	out<<"//Execution Begins Here!"<<endl;
+	out<<"//Declare Variables"<<endl;
+	out<<"//Start the game"<<endl;
+	out<<"//open file"<<endl;
+	out<<"//fill file"<<endl;
+	out<<"//close file"<<endl;
+	out<<"//give choice"<<endl;
+	out<<"//do breaks if choice quit is used or tolded to moved"<<endl;
+	out<<"//subtract players atack from monsters health and monsters attack from players health"<<endl;
+	out<<"This game is based on you moving through your enviorment and trying "<<endl;
+	out<<"to deal with this worlds monsters. To navagate this world you must"<<endl;
+	out<<"type in where to and to do do that you must use a actiion word and direction"<<endl;
+	out<<"for example 'go south' or 'run to beach' please no capital letters or 'the'"<<endl;
+	out<<"befor the direction. to check you heath type in 'hit points'. to see how "<<endl;
+	out<<"much your attack may do type in'test your might'.If you ever get lost "<<endl;
+	out<<"please type in 'look around' and your kind narrator will re describe "<<endl;
+	out<<"the area.whenever you are fighting a monster your options are to 'attack' or 'run'"<<endl;
+	out<<"if you ever want to quit just type in 'quit'."<<endl;
 //close file
-
+out.close();
 cout<<"You start this adventure because you are bored and simply crazy. You are so "<<endl;
 cout<<"crazy in fact, you hear a voice in your head(that'd be me).Today you deciced"<<endl;
 cout<<"to vist a planet and kill monsters because you are a hero.Today you deciced"<<endl;
@@ -44,7 +69,7 @@ cout<<"and feel a gust of salty air on your face. You swear with each gust of"<<
 cout<<"wind you hear a angry cuban yell if you dont know how to play"<<endl;
 cout<<"type '/help' for instructions"<<endl;
 do{
-getline(cin,choice);
+getline(cin,choice);//give choice
 if(choice=="go north"){
 	cout<<"theres a wall silly"<<endl;}
 if(choice=="walk north"){
@@ -98,7 +123,7 @@ if(choice=="/help"){
 	}
 if(choice=="test your might"){
 	cout<<"your attack is "<<attack<<endl;}
-if(choice=="quit"){
+if(choice=="quit"){//do breaks if choice quit is used or tolded to moved
 	cout<<" Thanks for playing. Hope you had fun! "<<endl;
 	quit++;}
 if(choice=="look around"){
@@ -266,7 +291,7 @@ void fight(){
 	cout<<"you did "<<attack<<" on the dragon while it did "<<monAtt<<" to you"<<endl;
 	playHp+=-monAtt;
 	attack++;
-	monHp+=-attack;
+	monHp+=-attack;//subtract players atack from monsters health and monsters attack from players health
 	monAtt++;}
 	if(playHp<0){
 		cout<<"you died how did you do that oh well try again later"<<endl;}

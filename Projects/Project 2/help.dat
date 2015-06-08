@@ -1,0 +1,22 @@
+//System Libraries
+//Global Constants
+//Function Prototypes
+//Function Prototypes
+//Execution Begins Here!
+//Declare Variables
+//Start the game
+//open file
+//fill file
+//close file
+//give choice
+//do breaks if choice quit is used or tolded to moved
+//subtract players atack from monsters health and monsters attack from players health
+This game is based on you moving through your enviorment and trying 
+to deal with this worlds monsters. To navagate this world you must
+type in where to and to do do that you must use a actiion word and direction
+for example 'go south' or 'run to beach' please no capital letters or 'the'
+befor the direction. to check you heath type in 'hit points'. to see how 
+much your attack may do type in'test your might'.If you ever get lost 
+please type in 'look around' and your kind narrator will re describe 
+the area.whenever you are fighting a monster your options are to 'attack' or 'run'
+if you ever want to quit just type in 'quit'.
