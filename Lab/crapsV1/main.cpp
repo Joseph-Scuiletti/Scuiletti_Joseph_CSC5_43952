@@ -1,8 +1,8 @@
 /*
  * File:   main.cpp
- * Author: Joseph Scuiletti
- * Created on May 4, 2015, 7:51 AM
- *      Purpsoe: Check out Dice Statisics
+ * Author: Dr. Mark E. Lehr
+ * Created on April 29, 2015, 9:39 AM
+ * Purpose:  Check out Dice Statisics
  */
 
 //System Libraries
@@ -19,7 +19,7 @@ using namespace std;
 unsigned char roll(unsigned char,unsigned char);
 
 //Execution begins here!
-int main(int argc, char** argv) {
+int main() {
     //Initialize the random number seed
     srand(static_cast<unsigned int>(time(0)));
     //Declare variables
@@ -70,8 +70,7 @@ int main(int argc, char** argv) {
 unsigned char roll(unsigned char nDie,unsigned char sides){
     unsigned char sum=0;
     for(int die=1;die<=nDie;die++){
-        sum+=(rand()%sides+2);
+        sum+=(rand()%sides+1);
     }
     return sum;
 }
-

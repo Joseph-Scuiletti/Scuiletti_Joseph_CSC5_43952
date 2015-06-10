@@ -25,7 +25,7 @@ int main() {
     srand(static_cast<unsigned int>(time(0)));
     //Declare variables
     const int SIZE=13;
-    int win[SIZE]={},lose[SIZE]={},nThrows[SIZE]={};
+    int win[SIZE]={},int lose[SIZE]={}, int nThrows[SIZE]={};
     int nGames=36000,thwGame=0,maxNThw=0;
     //Loop on the games and take stats
     for(int game=1;game<=nGames;game++){

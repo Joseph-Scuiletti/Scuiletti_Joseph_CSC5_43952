@@ -22,7 +22,7 @@ using namespace std;
 //Function Prototypes
 
 //Execution Begins Here
-int main(int argc, char** argv) {
+int main() {
     // declare variable
     char choice;
     //General Menu Format
@@ -33,7 +33,7 @@ int main(int argc, char** argv) {
     cout<<"Type 3 to solve problem 3"<<endl;
     cout<<"Type 4 to solve the Cable Bill"<<endl;
     cout<<"Type anything else to quit with no solutions."<<endl;
-    //Read the choice    
+    //Read the choice
     cin>>choice;
     //Solve a problem that has been chosen.
     switch(choice){
